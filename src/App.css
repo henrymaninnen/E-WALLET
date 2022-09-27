@@ -14,8 +14,10 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  
+  background-color: #7c7e81;
   min-height: 100vh;
+  background-size: ;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +37,121 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* MY CSS */
+.card{
+  border: 1px white solid;
+  height: 220px;
+  border-radius:5px ;
+  margin-top: 10px;
+  padding: 12px 0;
+  width: 400px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("./wallpaperflare.com_wallpaper.jpg");
+  background-size: cover;
+  box-shadow: rgba(20, 20, 21, 0.2) 0px 7px 29px 0px;
+}
+.card h3{
+  margin-top: 40px;
+}
+.card div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card div .cardHolderNameP{
+
+}
+.addCardContainer{
+  display:flex;
+  flex-direction: column;
+}
+.card button{
+  visibility: hidden;
+  position: relative;
+bottom: 100px;
+padding: 18px 12px;
+background-color: white;
+border: none;
+border-radius:2px ;
+text-transform: uppercase;
+}
+.card:hover button{
+visibility: visible;
+
+}
+.card:hover{
+  background-color: #7c7e81;
+}
+.card button:hover{
+  background-color: rgb(238, 238, 238);
+}
+.btn1{
+  margin-right: 6px;
+}
+
+.addCardButton{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #bdbfc2;
+  box-shadow: rgba(20, 20, 21, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+  margin-top: 36px;
+  padding: 14px 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.addCardButton:hover{
+  background-color: #8e8f8f;
+}
+/* ADD CARD */
+.addCard-container{
+  width: 100%;
+}
+.addCardInfoContainer{
+  border: 1px white solid;
+  height: 188px;
+  border-radius:5px ;
+  width: 300px;
+  color: black;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #bdbfc2;
+  box-shadow: rgba(20, 20, 21, 0.2) 0px 7px 29px 0px;
+}
+.addCardInfoContainer p{
+  font-size: 16px;
+}
+.addCard-form{
+  padding: 10p;
+  width: 30%;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  margin: 16px auto 0 auto;
+}
+.addCard-form input,
+.addCard-form select,
+.addCard-form button{
+  padding: 4px 12px;
+  width: 50%;
+  margin: 0 auto;
+}
+.addCard-form button{
+  margin-top: 14px;
+  padding: 10px 12px;
+  width: 30%;
+}
+.addCard-form select{
+  width: 56%;
+}
+h3{
+  font-size: 18px;
+}
+p{
+  font-size: 14px;
 }
